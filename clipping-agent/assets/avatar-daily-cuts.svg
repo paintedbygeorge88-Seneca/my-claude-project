@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#0B0B0F"/>
+  <text x="256" y="258" text-anchor="middle" dominant-baseline="central"
+        font-family="Helvetica,Arial,sans-serif" font-weight="900" font-size="310"
+        letter-spacing="-18" fill="#E8FF3A">DC</text>
+  <rect x="-60" y="245" width="640" height="24" fill="#0B0B0F" transform="rotate(-14 256 256)"/>
+</svg>
