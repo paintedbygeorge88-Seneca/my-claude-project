@@ -1,0 +1,37 @@
+# ART ENGINE — settings
+# Edit the lines marked TODO once. Everything else can stay as it is.
+
+artist_name: "George"                       # TODO: the name you sign your work with
+site_title: "George — Abstract Art"         # TODO
+tagline: "Abstract paintings and fine art prints, made in Barcelona"
+location: "Barcelona, Spain"
+contact_email: ""                            # TODO: where buyers / designers can reach you
+instagram: ""                                # optional, e.g. "paintedbygeorge"
+bio: |
+  I'm an abstract painter living in Barcelona with my dog. I've painted for most
+  of my life. My work is about colour, light and texture — pieces made to change
+  the feeling of a room.
+  # TODO: rewrite this in your own words (3–5 sentences is perfect)
+
+# Where the site lives. With the free GitHub Pages setup this is:
+site_url: "https://paintedbygeorge88-seneca.github.io/my-claude-project"
+
+currency: "EUR"
+
+# --- Pinterest drip (the automatic part) ---
+# Every artwork becomes a stream of different pins (styled poster, room mockups,
+# close-up texture details). The engine releases a few per day, forever, so your
+# Pinterest account stays active without you touching it.
+pins_per_day: 3
+pin_start_date: 2026-11-01
+recycle_after_days: 90     # after this, an artwork gets a fresh set of new pin images
+max_cycles: 6              # how many fresh sets per artwork (6 x 6 = 36 pins each)
+
+# Used when an artwork has no buy_links of its own (e.g. your Etsy shop front).
+default_buy_links: []
+#  - label: "Shop prints on Etsy"
+#    url: "https://www.etsy.com/shop/YOURSHOP"
+
+# Verification codes (paste them in during the one-time setup, see README)
+pinterest_verify: ""     # the content="..." value from Pinterest's "claim website" meta tag
+google_verify: ""        # the content="..." value from Google Search Console's meta tag

@@ -1,0 +1,61 @@
+# ART ENGINE — rebuilds the art site every morning and whenever artwork changes.
+# Each daily run releases the next few Pinterest pins into the feed Pinterest auto-pins from.
+name: Art Engine
+
+on:
+  push:
+    branches: [main]
+    paths: ["art-engine/**", ".github/workflows/art-engine.yml"]
+  schedule:
+    - cron: "17 6 * * *"   # 07:17 Barcelona time (winter), every day
+  workflow_dispatch:
+
+permissions:
+  contents: write    # to commit the pin log
+  pages: write
+  id-token: write
+
+concurrency:
+  group: art-engine
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed to know when each artwork was added
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow pyyaml
+
+      - run: python art-engine/scripts/build.py
+
+      # Committing the log keeps the repo active, which stops GitHub pausing the daily schedule.
+      - name: Commit pin log
+        run: |
+          git config user.name "art-engine-bot"
+          git config user.email "art-engine-bot@users.noreply.github.com"
+          git add art-engine/logs/pins-released.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Pin log: $(date -u +%F)"
+            git push || echo "Push skipped (branch moved); the next run will catch up."
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: art-engine/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
