@@ -30,7 +30,7 @@ Finds the right people and hands George a **"warm 10"** list every Monday:
   are George's audience.
 - For each: why they fit, the exact post to reply to, a drafted comment or DM in George's
   voice that refers to *their* work, and the collab idea that suits them.
-- George taps send on the ones he likes (~10 min/day max). Replies go into `outreach/log.csv`.
+- George taps send on the ones worth sending (~10 min/day max). Replies go into `outreach/log.csv`.
 - Keeps a growing map of the community in `outreach/hubs.csv`.
 
 ### Door: 24/7 inbound automation
