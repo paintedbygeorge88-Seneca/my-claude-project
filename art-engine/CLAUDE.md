@@ -23,6 +23,7 @@ send anything public or to a person without me seeing it first.
 - `.github/workflows/art-engine.yml` (repo root): rebuilds and deploys daily and on every push to `main`
 - `knowledge/artist-profile.md`: who I am, what I paint, who buys (from my interview)
 - `knowledge/funnel.md`: the plan: video → site/quiz → email → prints/commissions
+- `knowledge/machine.md`: the agents, what each automates, and the pull-not-push rule
 - `knowledge/strategy.md`: keyword and channel reference
 - `outreach/log.csv`: everyone contacted, so nobody gets emailed twice
 - `logs/pins-released.csv`: written by the robot, don't edit by hand
