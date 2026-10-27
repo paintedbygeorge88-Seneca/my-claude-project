@@ -1,5 +1,31 @@
 # The funnel: from stranger to collector
 
+**Rule: everything here is free. No paid ads, ever.** Every tool is on a free plan
+(GitHub Pages, Pinterest, MailerLite/Kit free tier, print-on-demand charges only per sale).
+
+## How we target the right people without ads
+Ads target by paying the platform. We target by **putting the work where the right
+people already are, and using the words they search with.**
+
+1. **Neighbour accounts.** Find 30–50 accounts whose followers would love this work:
+   expressive/figurative painters, poets writing about emotion, therapists and
+   mental-health creators, dark-aesthetic and art-curation pages. Spend 10 min a day
+   leaving real comments on their new posts. Their followers see you, and the platform
+   learns who your work is for.
+2. **Collabs.** Instagram "Collab" posts show on both accounts. Pair a painting with a
+   poet's verse, or a therapist's caption about masking. You reach their whole audience for free.
+3. **Feature pages.** Submit to art curation accounts that repost artists (many are free).
+4. **Searchable words.** Instagram and TikTok work like search engines now. On-screen
+   text and captions say exactly what it is: "abstract face painting about anxiety".
+   Small, specific hashtags (5–8), not huge ones like #art.
+5. **Hooks that select the audience.** "If you've ever said 'I'm fine' when you weren't…"
+   stops exactly the people who feel this work and scrolls past everyone else. That's targeting.
+6. **Pinterest + Google + Reddit.** People searching for emotional or face art find it
+   through automated pins and site pages.
+
+Claude builds and refreshes the neighbour list, collab targets and feature pages monthly
+(see "run outreach" in CLAUDE.md).
+
 Built from `artist-profile.md`. The work is emotional and personal, so people buy
 **the meaning and the artist**, not wall décor. Every stage leads with the story:
 *the faces we hide*.
