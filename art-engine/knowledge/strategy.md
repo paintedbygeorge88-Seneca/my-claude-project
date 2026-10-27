@@ -1,52 +1,35 @@
-# Strategy: getting abstract art in front of the right buyers for €0
+# Strategy reference
 
-## Who actually buys abstract art prints
-1. **Home decorators (largest group).** Mostly 25–45, furnishing or redecorating a room.
-   They search by *colour, room and mood*, not by artist name: "sage green abstract art",
-   "large art for living room", "neutral bedroom wall art". → **Pinterest + Google.**
-2. **Interior designers & stylists.** They buy for client projects, often several pieces
-   at once, and come back for more. → **Direct outreach.**
-3. **Hospitality & commercial spaces.** Boutique hotels, holiday rentals, restaurants,
-   co-working spaces, clinics. Barcelona is full of them. → **Direct outreach.**
-4. **Art collectors (originals).** Fewer, higher value. → **Saatchi Art / Artfinder** listings.
+The plan itself is in `funnel.md`, and who it's for is in `artist-profile.md`. This file is
+the reference for words and channels.
 
-## Channels, ranked by return on zero money
-| Channel | Why | Effort after setup |
-|---|---|---|
-| Pinterest (auto RSS) | Search engine for home decor, and a pin keeps working for months or years | None (automated) |
-| Google (site SEO + free Shopping listings) | Buyers with intent, slow to build, compounds | None (automated) |
-| Marketplaces (Etsy, Saatchi, Society6) | They already have the buyers | Listing once per painting |
-| Designer / hotel outreach | One yes can mean 5–20 pieces | 15 min a month (Claude drafts) |
-| Instagram | Good for collectors and credibility, but needs daily posting | Optional, manual |
+## Who buys abstract faces of the subconscious
+Not décor shoppers. People who **recognise themselves in the work**:
+1. **Emotionally literate collectors.** Buy because a piece names a feeling they have.
+   Found through short video, Instagram and Saatchi/Singulart.
+2. **People into psychology, introspection and mental health.** Therapy-literate, journaling,
+   poetry, "inner work". Found through video hooks and Pinterest.
+3. **Creatives needing imagery.** Musicians, authors, podcasters, for covers (licensing).
+4. **Commission clients.** Want "their inner face" painted as a personal or gift piece.
 
-## How the pins are written
-Pinterest ranks pins by keywords in the title and description and by fresh images.
-The engine combines:
-- **colour** (detected or from `info.yml`): "ochre abstract art"
-- **room** (`rooms`): "for the living room"
-- **mood** (`mood`): "calm", "coastal", "moody"
-- **your own keywords** (`keywords`): "mediterranean art", "large canvas"
+## Words that work (pins, captions, `keywords` in info.yml)
+abstract face painting · abstract portrait · expressive portrait · emotional art ·
+psychological art · art about feelings · the masks we wear · inner self art ·
+subconscious art · surreal portrait · moody art print · dark aesthetic art ·
+anxiety art · melancholy art · introspective art · contemporary expressionism ·
+Barcelona artist · arte abstracto rostros · arte emocional
 
-So when adding a painting, the most valuable fields are `colours`, `rooms`, `mood` and
-`keywords`. Use the words a buyer would type, not art-school words.
+Use the **feeling words** in `mood` (anxious, tender, guarded, haunted, numb, hopeful).
+They become pin titles like "Guarded abstract portrait".
 
-Strong search phrases for abstract prints (use in `keywords`):
-neutral abstract art, large abstract wall art, modern abstract painting, boho abstract
-art, minimalist wall art, textured abstract art, mid century modern art, mediterranean
-wall art, coastal abstract art, earthy tones wall art, abstract art for bedroom,
-living room wall decor, gallery wall art, original abstract painting, Barcelona art.
+## Channel rules of thumb
+- **Short video:** the first 1.5 s must show a face appearing or say a hook. Post 3–5×/week,
+  same clip on Reels, TikTok and Shorts. Captions in English, Spanish in the first comment.
+- **Instagram:** reply to every comment and DM within a day. Sales come from conversations.
+- **Pinterest:** automated. Don't touch it unless the numbers say so.
+- **Reddit:** share the work and the story, not links. Follow each subreddit's promo rules.
+- **Outreach / licensing:** personal, short, Gmail drafts only. The artist sends.
 
-## What to measure (monthly check)
-- Pinterest Analytics: impressions, outbound clicks, top pins
-- Search Console: clicks and which searches show your pages
-- Sales and enquiries by source (the pin links carry `utm_source=pinterest`)
-
-Typical timeline: Pinterest usually takes 2–4 months of steady pinning to build
-momentum. Don't judge it in week 3. The engine keeps pinning anyway.
-
-## What to do when something works
-- If a painting's pins get the most clicks, paint related work in that palette or
-  series and add it.
-- If a room or colour word wins, add more of it to `keywords` on other pieces.
-- If a designer says yes, ask what else they're working on and offer trade pricing
-  (typically 15–20% off).
+## Monthly review
+Quiz takers → subscribers → buyers, top 3 videos by profile visits, top pins by outbound
+clicks. Keep doing what's working, drop what isn't.

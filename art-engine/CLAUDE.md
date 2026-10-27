@@ -1,10 +1,13 @@
 # ART ENGINE — CLAUDE.md
 
 ## Project Purpose
-I'm an abstract painter in Barcelona. This engine gets my work seen by people who buy
-art, with almost no work from me and no ad spend. It builds my shop website, turns each
-painting into a daily drip of Pinterest pins, and feeds Google. Once a month it helps me
-reach interior designers and hospitality buyers directly.
+I'm an abstract painter in Barcelona. I paint abstract faces of the subconscious: inner
+emotions and the masks we wear. This engine runs the funnel that gets that work in front
+of people who feel it, and turns them into print buyers and commission clients, with no
+ad spend and 2–3 hours a week of my time.
+
+**Read `knowledge/artist-profile.md` and `knowledge/funnel.md` before any task.** They
+override generic art-marketing advice.
 
 ## My Role for You
 You run this for me. Keep my effort to short conversations. When I send a painting,
@@ -18,7 +21,9 @@ send anything public or to a person without me seeing it first.
 - `artworks/`: one image file, or one folder with `artwork.jpg` + `info.yml`, per painting
 - `scripts/build.py`: builds `_site/` (site, pin images, Pinterest + Google feeds)
 - `.github/workflows/art-engine.yml` (repo root): rebuilds and deploys daily and on every push to `main`
-- `knowledge/strategy.md`: buyers, channels, keyword guide (read before writing pin keywords or outreach)
+- `knowledge/artist-profile.md`: who I am, what I paint, who buys (from my interview)
+- `knowledge/funnel.md`: the plan: video → site/quiz → email → prints/commissions
+- `knowledge/strategy.md`: keyword and channel reference
 - `outreach/log.csv`: everyone contacted, so nobody gets emailed twice
 - `logs/pins-released.csv`: written by the robot, don't edit by hand
 
@@ -29,20 +34,27 @@ send anything public or to a person without me seeing it first.
 2. Save the photo as `artwork.jpg` (convert if needed; keep full resolution).
 3. Write `info.yml` (format in `artworks/README.md`):
    - `colours`: 2–4 plain buyer words (navy, ochre, sage, cream), not "cerulean"
-   - `mood`: 2–3 words (calm, bold, coastal, earthy, moody, joyful)
+   - `mood`: 2–3 feeling words for the face (guarded, anxious, tender, numb, defiant, hopeful)
    - `rooms`: where it would hang well
    - `keywords`: 3–6 search phrases from `knowledge/strategy.md` that honestly fit
-   - `description`: draft 1–2 sentences in my voice and **show it to me**; I may rewrite it
+   - `description`: draft 1–2 sentences in my voice about what this face is hiding, and **show it to me**; I may rewrite it
    - ask me only for what you can't see: title, size, medium, year, prices, buy link, original for sale?
 4. Run `python art-engine/scripts/build.py` to check it builds, then commit and push.
 5. Tell me in one line that it's live and when its first pins go out (check the schedule).
 
+## Workflow: "content session" (weekly, ~30 min)
+1. I send process footage and/or a talking clip.
+2. Pick 3–5 moments where a face emerges or I say something true. Use `clipping-agent/` tools to cut them.
+3. For each: hook (first 1.5 s), English caption, Spanish caption for the first comment, 5–8 hashtags from
+   `knowledge/strategy.md`, and one call to action (quiz or prints).
+4. Give me a posting plan for the week (Reels + TikTok + Shorts). I post or schedule it.
+
 ## Workflow: "run outreach" (monthly)
 1. Read `outreach/log.csv` and `knowledge/strategy.md`.
 2. Find ~10 **new** targets that fit my work. Rotate between:
-   - interior designers and stylists (Barcelona first, then Spain, then UK/NL/DE remote)
-   - boutique hotels, holiday-rental operators, restaurants and co-working spaces in Barcelona
-   - art consultants and corporate art advisors
+   - independent musicians, authors, poets and mental-health podcasters (cover art / licensing)
+   - art consultants and collectors' platforms (Saatchi, Singulart curators)
+   - Barcelona venues for a pop-up or show (cafés, galleries, studios in Poblenou, Gràcia, El Born)
    Use public business info only (their website or public contact page). Skip anyone
    already in the log.
 3. Write each email personally: one specific thing about *their* work or space, one or two of

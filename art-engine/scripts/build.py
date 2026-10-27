@@ -199,7 +199,7 @@ def poster_pin(a, artist, dark=False):
     ty = y + art.height + 100
     title_font = fit_text(d, a["title"], PIN_W - 140, 60, serif=True)
     d.text((PIN_W // 2, ty), a["title"], font=title_font, fill=fg, anchor="mm")
-    sub = f"Abstract art print  ·  {artist}"
+    sub = f"Abstract portrait print  ·  {artist}"
     d.text((PIN_W // 2, ty + 72), sub, font=fit_text(d, sub, PIN_W - 140, 30), fill=muted, anchor="mm")
     d.text((PIN_W // 2, ty + 122), "Painted in Barcelona  ·  Ships worldwide", font=font(24), fill=muted,
            anchor="mm")
@@ -269,28 +269,29 @@ def render_pin(a, variant, cycle, artist):
 
 
 def pin_copy(a, variant, cycle, artist):
-    """Pinterest is a search engine: titles and descriptions are written around what buyers type."""
+    """Pinterest is a search engine. The work is emotional face art, so copy targets what
+    people searching for meaning type ("emotional art", "abstract face painting"), not décor."""
     rng = seeded("copy", a["slug"], variant, cycle)
     colours = a["colours"] or ["colourful"]
-    c1 = colours[0]
     palette = " and ".join(colours[:2])
-    room = rng.choice(a["rooms"])
-    mood = rng.choice(a["mood"]) if a["mood"] else rng.choice(["modern", "contemporary", "minimal"])
+    feeling = rng.choice(a["mood"]) if a["mood"] else rng.choice(["introspective", "raw", "haunting", "tender"])
     t = a["title"]
     titles = {
-        "poster": [f"{t} — {c1} abstract wall art print", f"{palette.capitalize()} abstract art print: {t}"],
-        "poster_dark": [f"{mood.capitalize()} abstract painting print — {t}", f"{t} | modern abstract art"],
-        "wall": [f"{c1.capitalize()} abstract art for the {room}", f"{t} styled in a {room}"],
-        "wall_alt": [f"{mood.capitalize()} wall art idea for your {room}", f"Abstract art above a bench: {t}"],
-        "detail": [f"Texture close-up — {t}", f"Painterly texture detail in {palette}"],
-        "detail_alt": [f"Up close: {t}, abstract painting", f"{c1.capitalize()} brushwork detail — {t}"],
+        "poster": [f"{t} — abstract face painting print", f"{feeling.capitalize()} abstract portrait: {t}"],
+        "poster_dark": [f"The faces we hide — {t}", f"{t} | emotional abstract art print"],
+        "wall": [f"{feeling.capitalize()} abstract face art on the wall", f"{t}: expressive portrait print, framed"],
+        "wall_alt": [f"Art that feels something — {t}", f"Moody abstract face wall art: {t}"],
+        "detail": [f"Up close: the brushwork in {t}", f"Expressive brushstrokes — {palette} face painting"],
+        "detail_alt": [f"Detail of a subconscious portrait — {t}", f"Raw texture, hidden face — {t}"],
     }
     title = rng.choice(titles[variant])[:100]
-    intro = a["description"] or f"{t} is an original abstract painting by {artist} in {palette}."
-    tags = [f"{c1} abstract art", f"{room} wall art", "abstract art print", "modern art print",
-            f"{mood} wall decor", "contemporary painting"] + list(a["keywords"])
-    desc = (f"{intro} Fine art print by {artist}, painted in Barcelona and shipped worldwide. "
-            f"Perfect for a {room}. " + " · ".join(dict.fromkeys(tags)))
+    intro = a["description"] or (f"{t} is an abstract portrait of a {feeling} inner state by {artist}, "
+                                 f"in {palette}.")
+    tags = ["abstract face painting", "emotional art", "expressive portrait", "psychological art",
+            f"{feeling} art", "abstract portrait print", "art about feelings"] + list(a["keywords"])
+    desc = (f"{intro} Part of a series on the masks we wear and the emotions we hide. "
+            f"Fine art print by {artist}, painted in Barcelona, shipped worldwide. "
+            + " · ".join(dict.fromkeys(tags)))
     return title, desc[:500]
 
 
