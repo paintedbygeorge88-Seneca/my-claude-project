@@ -1,12 +1,12 @@
 # ART ENGINE — settings
 # Edit the lines marked TODO once. Everything else can stay as it is.
 
-artist_name: "George"                       # TODO: the name you sign your work with
-site_title: "George — Abstract Art"         # TODO
+artist_name: "George Garnish"
+site_title: "George Garnish — Abstract Art"
 tagline: "Abstract paintings and fine art prints, made in Barcelona"
 location: "Barcelona, Spain"
 contact_email: ""                            # TODO: where buyers / designers can reach you
-instagram: ""                                # optional, e.g. "paintedbygeorge"
+instagram: "george_garnish"
 bio: |
   I'm an abstract painter living in Barcelona with my dog. I've painted for most
   of my life. My work is about colour, light and texture — pieces made to change

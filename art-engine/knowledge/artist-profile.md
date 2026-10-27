@@ -25,13 +25,24 @@ Source of truth for positioning, copy and targeting. Update when anything change
 - Time: **2–3 hours/week** outside painting.
 - Budget: €0 for ads.
 
+## The other half: coach and facilitator
+- **Men's support coach** and **breathwork + ice bath facilitator**.
+- This isn't a distraction from the art. It's the same subject. The paintings show the
+  masks and hidden emotions that the coaching helps men take off.
+- The audience overlap is the niche: **men doing inner work** (men's circles,
+  breathwork, cold exposure, therapy-literate), the people who love them, and the
+  coaches, facilitators and retreats in that world.
+- The artist is already **inside** that community, which gives free, trusted reach.
+
 ## Offer
 - **Fine art prints** (print on demand)
 - **Commissions**
 - Originals: not leading, but available on request
 
 ## Audience today
-- Instagram, under 1,000 followers. Handle: TODO
+- Instagram **@george_garnish**, under 1,000 followers. An all-in-one page: art, men's
+  support coaching, breathwork and ice baths. Paintings are further down the grid.
+  The website is meant to be the main home for the art.
 - Past buyers from the old shop. Contact list: TODO (warmest people we have)
 
 ## Markets (all four, in this order of effort)
@@ -44,7 +55,6 @@ Source of truth for positioning, copy and targeting. Update when anything change
 **Real side income: €1,000+/month within 6–12 months** from prints + commissions.
 
 ## Still to fill in
-- Instagram handle
 - Price ideas for prints and commissions
 - Which print service the old shop used, and whether past customer emails exist
 - 5–10 photos of the best face pieces
